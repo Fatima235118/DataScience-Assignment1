@@ -27,3 +27,7 @@ dfOrbit["Grade"] = dfOrbit["Marks"].apply(
 
 dfOrbit = dfOrbit.sort_values(by="Marks", ascending=False)
 print(dfOrbit)
+
+# Remove duplicate rows
+dfOrbit = dfOrbit.drop_duplicates()
+print("Data cleaned successfully")
